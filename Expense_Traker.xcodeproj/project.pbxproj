@@ -25,6 +25,9 @@
 		1925932D2C543D7800438125 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1925932C2C543D7800438125 /* Date+Extensions.swift */; };
 		192593302C54458A00438125 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1925932F2C54458A00438125 /* CardView.swift */; };
 		192593322C5A13DB00438125 /* TransactionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192593312C5A13DB00438125 /* TransactionCardView.swift */; };
+		192593382C5AC2DF00438125 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192593372C5AC2DF00438125 /* Home.swift */; };
+		1925933A2C5AC45800438125 /* Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192593392C5AC45800438125 /* Help.swift */; };
+		1925933C2C5E071C00438125 /* DateFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1925933B2C5E071C00438125 /* DateFilterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +50,9 @@
 		1925932C2C543D7800438125 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		1925932F2C54458A00438125 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		192593312C5A13DB00438125 /* TransactionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCardView.swift; sourceTree = "<group>"; };
+		192593372C5AC2DF00438125 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		192593392C5AC45800438125 /* Help.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Help.swift; sourceTree = "<group>"; };
+		1925933B2C5E071C00438125 /* DateFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFilterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,7 @@
 		1925930D2C4F789D00438125 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				192593332C5AC29900438125 /* Swipe  */,
 				1925932E2C54454400438125 /* Healper */,
 				1925931D2C536CD900438125 /* TabViews */,
 				192593102C4F791800438125 /* IntroScreen.swift */,
@@ -145,8 +152,18 @@
 			children = (
 				1925932F2C54458A00438125 /* CardView.swift */,
 				192593312C5A13DB00438125 /* TransactionCardView.swift */,
+				1925933B2C5E071C00438125 /* DateFilterView.swift */,
 			);
 			path = Healper;
+			sourceTree = "<group>";
+		};
+		192593332C5AC29900438125 /* Swipe  */ = {
+			isa = PBXGroup;
+			children = (
+				192593372C5AC2DF00438125 /* Home.swift */,
+				192593392C5AC45800438125 /* Help.swift */,
+			);
+			path = "Swipe ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,9 +238,12 @@
 			files = (
 				1925931C2C5369D400438125 /* TintColor.swift in Sources */,
 				1925931F2C536CF700438125 /* Recents.swift in Sources */,
+				1925933C2C5E071C00438125 /* DateFilterView.swift in Sources */,
 				1925931A2C53637F00438125 /* Transaction.swift in Sources */,
 				192593012C4F764400438125 /* ContentView.swift in Sources */,
+				192593382C5AC2DF00438125 /* Home.swift in Sources */,
 				192593302C54458A00438125 /* CardView.swift in Sources */,
+				1925933A2C5AC45800438125 /* Help.swift in Sources */,
 				192593112C4F791800438125 /* IntroScreen.swift in Sources */,
 				192593162C50718800438125 /* Tab.swift in Sources */,
 				192593252C536D5A00438125 /* Settings.swift in Sources */,

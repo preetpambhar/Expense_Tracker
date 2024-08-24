@@ -81,10 +81,10 @@ struct Recents: View {
                 Text("Welcome")
                     .font(.title.bold())
                 
-                if userName.isEmpty{
-                    Text(userName)
-                        .font(.callout)
+                if !userName.isEmpty{
+                    Text(userName)                        .font(.callout)
                 }
+            
             })
             .visualEffect { content, geometryProxy in
                 content

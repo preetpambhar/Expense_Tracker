@@ -19,7 +19,7 @@ struct NewExpenseView: View {
     @State private var dateAdded: Date = .now
     @State private var category: Category = .expense
     //Random tint
-    var tint: TintColor = tints.randomElement()!
+    @State var tint: TintColor = tints.randomElement()!
     
     var body: some View {
         ScrollView(.vertical){
@@ -80,7 +80,17 @@ struct NewExpenseView: View {
         })
         .onAppear(perform: {
             if let editTransaction{
-                ///Load  all Exixting Data
+                ///Load  all Existing Data from the Transaction
+                title = editTransaction.title
+                remarks = editTransaction.remarks
+                dateAdded = editTransaction.dateAdded
+                if let category = editTransaction.rawCategory{
+                    self.category = category
+                }
+                amount = editTransaction.amount
+                if let tint = editTransaction.tint{
+                    self.tint = tint
+                }
             }
         })
     }

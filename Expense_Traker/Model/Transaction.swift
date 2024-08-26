@@ -6,14 +6,14 @@
 //
 
 import SwiftUI
-
-struct Transaction: Identifiable {
-    let id: UUID = .init()
+import SwiftData
+@Model
+class Transaction{
     //proprties
     var title: String
     var remarks: String
     var amount: Double
-    var dataAdded: Date
+    var dateAdded: Date
     var category: String
     var tintColor: String
     
@@ -22,7 +22,7 @@ struct Transaction: Identifiable {
         self.title = title
         self.remarks = remarks
         self.amount = amount
-        self.dataAdded = dataAdded
+        self.dateAdded = dataAdded
         self.category = category.rawValue
         self.tintColor = tintColor.color
     }
@@ -33,10 +33,10 @@ struct Transaction: Identifiable {
     }
 }
 
-//Sample Transactions for UI testing
-var sampleTransactions: [Transaction] = [
-    .init(title: "AirBuds", remarks: "Apple Product", amount: 299, dataAdded: .now, category: .expense, tintColor: tints.randomElement()!),
-    .init(title: "iPad", remarks: "Apple Product", amount: 959.65, dataAdded: .now, category: .expense, tintColor: tints.randomElement()!),
-    .init(title: "Macbbok", remarks: "Apple Product", amount: 1599.40, dataAdded: .now, category: .expense, tintColor: tints.randomElement()!),
-    .init(title: "Payment", remarks: "Trading Payment", amount: 5699, dataAdded: .now, category: .income, tintColor: tints.randomElement()!)
-]
+////Sample Transactions for UI testing
+//var sampleTransactions: [Transaction] = [
+//    .init(title: "AirBuds", remarks: "Apple Product", amount: 299, dataAdded: .now, category: .expense, tintColor: tints.randomElement()!),
+//    .init(title: "iPad", remarks: "Apple Product", amount: 959.65, dataAdded: .now, category: .expense, tintColor: tints.randomElement()!),
+//    .init(title: "Macbbok", remarks: "Apple Product", amount: 1599.40, dataAdded: .now, category: .expense, tintColor: tints.randomElement()!),
+//    .init(title: "Payment", remarks: "Trading Payment", amount: 5699, dataAdded: .now, category: .income, tintColor: tints.randomElement()!)
+//]

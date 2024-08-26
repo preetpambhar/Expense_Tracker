@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct NewExpenseView: View {
+struct Transactionview: View {
     ///Env Properties
     @Environment(\.modelContext) private var context
     @Environment(\.dismiss) private var dismiss
@@ -44,12 +44,17 @@ struct NewExpenseView: View {
                         .hSpacing(.leading)
                     
                     HStack(spacing: 15){
-                        TextField("0.0", value: $amount, formatter: numberFormatter)
+                        HStack(spacing: 4){
+                            Text(currencySymbol)
+                                .font(.callout.bold())
+                            TextField("0.0", value: $amount, formatter: numberFormatter)
+                                .keyboardType(.decimalPad)
+                        }
                             .padding(.horizontal, 15)
                             .padding(.vertical, 12)
                             .background(.background, in: .rect(cornerRadius: 10))
                             .frame(maxWidth: 130)
-                            .keyboardType(.decimalPad)
+                            
                         
                         //Custom Check Box
                         CategoryCheckBox()
@@ -71,7 +76,7 @@ struct NewExpenseView: View {
             }
             .padding(15)
         }
-        .navigationTitle("Add Transaction")
+        .navigationTitle("\(editTransaction == nil ? "Add" : "Edit") Transaction")
         .background(.gray.opacity(0.15))
         .toolbar(content: {
             ToolbarItem(placement: .topBarTrailing){
@@ -170,6 +175,6 @@ struct NewExpenseView: View {
 
 #Preview {
     NavigationStack{
-        NewExpenseView()
+        Transactionview()
     }
 }

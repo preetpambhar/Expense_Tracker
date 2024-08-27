@@ -49,7 +49,7 @@ struct Recents: View {
                             
                             ForEach(transactions){ transaction in
                                 NavigationLink{
-                                   NewExpenseView(editTransaction: transaction)
+                                   Transactionview(editTransaction: transaction)
                                 } label: {
                                     TransactionCardView(transaction: transaction)
                                 }
@@ -101,7 +101,7 @@ struct Recents: View {
             
             Spacer(minLength: 0)
             NavigationLink{
-                NewExpenseView()
+                Transactionview()
             } label: {
                 Image(systemName: "plus")
                     .font(.title3)

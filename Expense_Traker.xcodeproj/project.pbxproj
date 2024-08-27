@@ -30,6 +30,7 @@
 		1925933C2C5E071C00438125 /* DateFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1925933B2C5E071C00438125 /* DateFilterView.swift */; };
 		19A20FB62C7AA4BA0075CEED /* LockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A20FB52C7AA4BA0075CEED /* LockView.swift */; };
 		19A20FB82C7AEA770075CEED /* Transactionview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A20FB72C7AEA770075CEED /* Transactionview.swift */; };
+		19A20FBA2C7C40710075CEED /* FilterTransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A20FB92C7C40710075CEED /* FilterTransactionsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		1925933B2C5E071C00438125 /* DateFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFilterView.swift; sourceTree = "<group>"; };
 		19A20FB52C7AA4BA0075CEED /* LockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LockView.swift; sourceTree = "<group>"; };
 		19A20FB72C7AEA770075CEED /* Transactionview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transactionview.swift; sourceTree = "<group>"; };
+		19A20FB92C7C40710075CEED /* FilterTransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTransactionsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 				19A20FB52C7AA4BA0075CEED /* LockView.swift */,
 				192593312C5A13DB00438125 /* TransactionCardView.swift */,
 				1925933B2C5E071C00438125 /* DateFilterView.swift */,
+				19A20FB92C7C40710075CEED /* FilterTransactionsView.swift */,
 			);
 			path = Healper;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				192593162C50718800438125 /* Tab.swift in Sources */,
 				192593252C536D5A00438125 /* Settings.swift in Sources */,
 				192592FF2C4F764400438125 /* Expense_TrakerApp.swift in Sources */,
+				19A20FBA2C7C40710075CEED /* FilterTransactionsView.swift in Sources */,
 				192593212C536D2F00438125 /* Search.swift in Sources */,
 				19A20FB62C7AA4BA0075CEED /* LockView.swift in Sources */,
 				1925932D2C543D7800438125 /* Date+Extensions.swift in Sources */,

@@ -31,6 +31,7 @@
 		19A20FB62C7AA4BA0075CEED /* LockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A20FB52C7AA4BA0075CEED /* LockView.swift */; };
 		19A20FB82C7AEA770075CEED /* Transactionview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A20FB72C7AEA770075CEED /* Transactionview.swift */; };
 		19A20FBA2C7C40710075CEED /* FilterTransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A20FB92C7C40710075CEED /* FilterTransactionsView.swift */; };
+		19A20FBC2C7EED920075CEED /* ChartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A20FBB2C7EED920075CEED /* ChartModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		19A20FB52C7AA4BA0075CEED /* LockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LockView.swift; sourceTree = "<group>"; };
 		19A20FB72C7AEA770075CEED /* Transactionview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transactionview.swift; sourceTree = "<group>"; };
 		19A20FB92C7C40710075CEED /* FilterTransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTransactionsView.swift; sourceTree = "<group>"; };
+		19A20FBB2C7EED920075CEED /* ChartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				192593172C5362DB00438125 /* Category.swift */,
 				192593192C53637F00438125 /* Transaction.swift */,
 				1925931B2C5369D400438125 /* TintColor.swift */,
+				19A20FBB2C7EED920075CEED /* ChartModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 				1925933C2C5E071C00438125 /* DateFilterView.swift in Sources */,
 				1925931A2C53637F00438125 /* Transaction.swift in Sources */,
 				192593012C4F764400438125 /* ContentView.swift in Sources */,
+				19A20FBC2C7EED920075CEED /* ChartModel.swift in Sources */,
 				192593382C5AC2DF00438125 /* Home.swift in Sources */,
 				192593302C54458A00438125 /* CardView.swift in Sources */,
 				1925933A2C5AC45800438125 /* Help.swift in Sources */,

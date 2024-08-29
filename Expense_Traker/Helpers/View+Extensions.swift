@@ -17,7 +17,7 @@ extension View {
         self
         .frame(maxHeight:.infinity, alignment: alignment)
     }
-    
+    @available(iOSApplicationExtension, unavailable)
     var safeArea: UIEdgeInsets{
         if let windowSection = (UIApplication.shared.connectedScenes.first as? UIWindowScene){
             return windowSection.keyWindow?.safeAreaInsets ?? .zero

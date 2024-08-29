@@ -18,10 +18,10 @@ struct TintColor: Identifiable {
 
 var tints: [TintColor] = [
     .init(color: "Red", value: .red),
-    .init(color: "Red", value: .blue),
-    .init(color: "Red", value: .pink),
-    .init(color: "Red", value: .purple),
-    .init(color: "Red", value: .brown),
-    .init(color: "Red", value: .orange),
+    .init(color: "Blue", value: .blue),
+    .init(color: "Pink", value: .pink),
+    .init(color: "Purple", value: .purple),
+    .init(color: "Brown", value: .brown),
+    .init(color: "Orange", value: .orange),
     
 ]

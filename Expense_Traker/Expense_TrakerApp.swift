@@ -6,12 +6,16 @@
 //
 
 import SwiftUI
+import WidgetKit
 
 @main
 struct Expense_TrakerApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .onAppear{
+                    WidgetCenter.shared.reloadAllTimelines()
+                }
         }
         .modelContainer(for: [Transaction.self])
     }

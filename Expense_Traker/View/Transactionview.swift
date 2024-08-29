@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import WidgetKit 
 
 struct Transactionview: View {
     ///Env Properties
@@ -117,6 +118,8 @@ struct Transactionview: View {
         }
         //dismissing View
         dismiss()
+        //updating widgets
+        WidgetCenter.shared.reloadAllTimelines()
     }
     @ViewBuilder
     func CustomSection(_ title: String,_ hint: String, value: Binding <String>) -> some View{
